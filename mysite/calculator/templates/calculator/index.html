@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Программа для финансового анализа</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="site-header">
+            <div>
+                <h1>Программа для финансового анализа</h1>
+            </div>
+            </header>
+        <form method="post">
+            <div class='form-input'>
+                {% csrf_token %}
+                {{ form.as_div }}
+                <button type="submit" class="btn btn-primary">
+                    Провести аналитику
+                </button>    
+            </div>
+        </form>
+        {% if OTC1 and OTC2 and OTC3 and OTC4 and OTC5 and OTC6 and OTC7 and OTC8 and OTC9 and OTC10 and OTC11 and OTC12 and OTC13 and OTC14 and OTC15 and OTC16 and OTC17 and OTC18 and OTC19 and OTC20 and OTC21 and OTC22 and OTC23 and OTC24 and OTC25 and OTC26 and OTC27 and OTC28 and OTC29 and OTC30 and OTC31 %}
+            <div class="mt-3 main_container">
+                <div class='report_conclusion'>
+                    <div>{{ OTC1 }}</div>
+                </div>
+                <div class='report_balance'>
+                    <div>{{ OTC3 }}</div>
+                    <div>{{ OTC5 }}</div>
+                    <div>{{ OTC2 }}</div>
+                    <div>{{ OTC4 }}</div>
+                    <div>{{ OTC6 }}</div>
+                </div>
+                <div>{{ OTC7 }}</div>
+                <div>{{ OTC8 }}</div>
+                <div>{{ OTC9 }}</div>
+                <div>{{ OTC10 }}</div>
+                <div>{{ OTC11 }}</div>
+                <div>{{ OTC12 }}</div>
+                <div>{{ OTC13 }}</div>
+                <div>{{ OTC14 }}</div>
+                <div>{{ OTC15 }}</div>
+                <div>{{ OTC16 }}</div>
+                <div>{{ OTC17 }}</div>
+                <div>{{ OTC18 }}</div>
+                <div>{{ OTC19 }}</div>
+                <div>{{ OTC20 }}</div>
+                <div>{{ OTC21 }}</div>
+                <div>{{ OTC22 }}</div>
+                <div>{{ OTC23 }}</div>
+                <div>{{ OTC24 }}</div>
+                <div>{{ OTC25 }}</div>
+                <div>{{ OTC26 }}</div>
+                <div>{{ OTC27 }}</div>
+                <div>{{ OTC28 }}</div>
+                <div>{{ OTC29 }}</div>
+                <div>{{ OTC30 }}</div>
+                <div>{{ OTC31 }}</div>
+            </div>
+        {% endif %}
+
+    </div>
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
