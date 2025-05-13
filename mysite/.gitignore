@@ -7,7 +7,7 @@ venv/
 .venv/
 *.log
 *.sqlite3
-.vscode/
+/vscode/
 .idea/
 node_modules/
 .npm
